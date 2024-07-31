@@ -102,3 +102,33 @@ print(f"Kleinste Zahl: {smallest_numb}")
 result = (sorted_numbers, largest_numb, smallest_numb)
 
 print(f"Ergebnis Tuple: {result}")
+
+
+
+
+#AUFGABE 4:
+
+#Dictionary
+friends = {
+    "Franzi": 1995,
+    "Svea": 1994,
+    "Jule": 1995,
+    "Maria": 1993,
+    "Kathi": 1990
+}
+name = input("Namen eines Freundes: ")
+
+if name in friends:
+    geburtsjahr = friends[name]
+    print(f"{name} ist {geburtsjahr} geboren.")
+else:
+    print(f"Der Name {name} existiert nicht.")
+
+# 3. Ein Set aller Geburtsjahre erstellen und die Anzahl der einzigartigen Geburtsjahre ausgeben
+gebjahre = set(friends.values())
+einzigartige_geburtsjahre = len(gebjahre)
+
+# Ausgabe des Sets und der Anzahl der einzigartigen Geburtsjahre
+print(f"Set der Geb.jahre: {gebjahre}")
+print(f"Anzahl der einzigartigen Geb.jahre: {einzigartige_geburtsjahre}")
+
