@@ -27,6 +27,10 @@ print(msg)
 
 #ValueError: invalid literal for int() with base 10
 
+
+
+#AUFGABE 1:
+
 #Frage nach Name, Alter und Geburtsort
 name = input("Wie heißt du? ")
 
@@ -49,3 +53,27 @@ if alter > 18:
     print("Du bist älter als 18 Jahre.")
 else:
     print("Du bist 18 Jahre oder jünger.")
+
+
+
+#AUFGABE 2:
+
+text = input("Hier kommt der Text: ")
+
+neuer_text = ""
+
+vokal_anzahl = 0
+
+vokale = "aeiouAEIOU"
+
+# Alle Vokale durch * ersetzen und Vokale zählen
+for buchstabe in text:
+    if buchstabe in vokale:
+        neuer_text += "*"
+        vokal_anzahl += 1
+    else:
+        neuer_text += buchstabe
+
+# Ausgabe 
+print(f"Der neue Text ist: {neuer_text}")
+print(f"Anzahl der Vokale im Text: {vokal_anzahl}")
