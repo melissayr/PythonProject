@@ -77,3 +77,28 @@ for buchstabe in text:
 # Ausgabe 
 print(f"Der neue Text ist: {neuer_text}")
 print(f"Anzahl der Vokale im Text: {vokal_anzahl}")
+
+
+
+
+#AUFGABE:3
+
+import random
+
+#liste random zahlen
+randomnumber = [random.randint(1, 100) for _ in range(10)]
+
+sorted_numbers = sorted(randomnumber)
+
+largest_numb = max(sorted_numbers)
+smallest_numb = min(sorted_numbers)
+
+#ausgabe
+print(f"Sortierte liste: {sorted_numbers}")
+print(f"Größte Zahl: {largest_numb}")
+print(f"Kleinste Zahl: {smallest_numb}")
+
+#tuple
+result = (sorted_numbers, largest_numb, smallest_numb)
+
+print(f"Ergebnis Tuple: {result}")
