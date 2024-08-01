@@ -169,9 +169,27 @@ else:
 
 print(f"Die größte Zahl ist: {biggestnumb}")
 
-# Überprüfen, ob die größte Zahl gerade oder ungerade ist
+# Überprüfe ob die größte Zahl gerade oder ungerade ist
 if biggestnumb % 2 == 0:
     print(f"Die größte zahl {biggestnumb} ist gerade.")
 else:
     print(f"Die größte zahl {biggestnumb} ist ungerade.")
+
+
+
+#AUFGABE 7
+
+#function fakultaet definieren, die die Fakultät einer zahl berechnet
+def fakultaet(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fakultaet(n - 1)
+
+# Eingabe einer Zahl
+number = int(input("Eigabe Zahl: "))
+
+#fakultät dieser Zahl mithilfe der function berechnen, dann ausgabe
+result = fakultaet(number)
+print(f"Die Fakultät von {number} ist {result}.")
 
