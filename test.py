@@ -105,7 +105,6 @@ print(f"Ergebnis Tuple: {result}")
 
 
 
-
 #AUFGABE 4:
 
 #Dictionary
@@ -131,4 +130,25 @@ einzigartige_geburtsjahre = len(gebjahre)
 # Ausgabe des Sets und der Anzahl der einzigartigen Geburtsjahre
 print(f"Set der Geb.jahre: {gebjahre}")
 print(f"Anzahl der einzigartigen Geb.jahre: {einzigartige_geburtsjahre}")
+
+
+
+
+
+#AUFGABE 5 loops
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+#loop summe
+summe = 0
+for number in numbers:
+    summe += number
+
+print(f"Die Summe aller Zahlen in der Liste ist: {summe}")
+
+# 3. Eine weitere Schleife verwenden, um das Produkt aller Zahlen in der Liste zu berechnen und auszugeben
+product = 1
+for number in numbers:
+    product *= number
+
+print(f"Produkt aller zahlen in liste: {product}")
 
