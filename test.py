@@ -152,3 +152,26 @@ for number in numbers:
 
 print(f"Produkt aller zahlen in liste: {product}")
 
+
+
+#AUFGABE 6
+number1 = int(input("Eingabe erste Zahl: "))
+number2 = int(input("Eingabe zweite Zahl: "))
+number3 = int(input("Eingabe dritte Zahl: "))
+
+# welche der 3 zahlen ist größer
+if number1 >= number2 and number1 >= number3:
+    biggestnumb = number1
+elif number2 >= number1 and number2 >= number3:
+    biggestnumb = number2
+else:
+    biggestnumb = number3
+
+print(f"Die größte Zahl ist: {biggestnumb}")
+
+# Überprüfen, ob die größte Zahl gerade oder ungerade ist
+if biggestnumb % 2 == 0:
+    print(f"Die größte zahl {biggestnumb} ist gerade.")
+else:
+    print(f"Die größte zahl {biggestnumb} ist ungerade.")
+
