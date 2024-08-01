@@ -193,3 +193,28 @@ number = int(input("Eigabe Zahl: "))
 result = fakultaet(number)
 print(f"Die Fakultät von {number} ist {result}.")
 
+
+
+#AUFGABE 8
+
+#Klasse Rechteck definieren mit attribute länge + breite 
+class Rechteck:
+    def __init__(self, laenge, breite):
+        self.laenge = laenge
+        self.breite = breite
+
+    #Methode für fläche definieren
+    def flaeche(self):
+        return self.laenge * self.breite
+
+#Objekte der klasse erstellen
+rechteck1 = Rechteck(3, 6)
+rechteck2 = Rechteck(5, 9)
+
+#fläche der Rechtecke berechnen
+flaeche1 = rechteck1.flaeche()
+flaeche2 = rechteck2.flaeche()
+
+print(f"Fläche 1 Rechteck: {flaeche1}")
+print(f"Fläche 2 Rechteck: {flaeche2}")
+
